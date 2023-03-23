@@ -1,14 +1,15 @@
 {
   "name": "general-js-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A versatile and easy-to-use JavaScript library for building complex applications and web pages.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "prettier": "./.prettierrc",
   "scripts": {
     "lint": "eslint . --ignore-path .prettierignore",
     "format": "prettier --write .",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "build": "babel src -d dist"
   },
   "jest": {
     "transform": {
@@ -16,6 +17,7 @@
     }
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
     "@commitlint/cli": "^17.4.4",
