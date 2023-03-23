@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/msrajawat298/general-js-toolkit"
+    "url": "git+https://github.com/vitabletec/general-js-toolkit"
   },
   "keywords": [
     "general-js-toolkit",
@@ -71,12 +71,14 @@
     "powerful",
     "versatile",
     "better applications",
-    "efficient websites"
+    "efficient websites",
+    "msrajawat298",
+    "vitabletech"
   ],
   "author": "msrajawat298",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/msrajawat298/general-js-toolkit/issues"
+    "url": "https://github.com/vitabletec/general-js-toolkit/issues"
   },
-  "homepage": "https://github.com/msrajawat298/general-js-toolkit#readme"
+  "homepage": "https://vitabletec.github.io/general-js-toolkit/"
 }
