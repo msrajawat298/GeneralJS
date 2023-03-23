@@ -16,7 +16,7 @@ jobs:
       - name: Install jsdoc
         run: npm install -g jsdoc
       - name: Build Documentation
-        run: jsdoc src/ -c jsdoc.json -R README.md -d docs/
+        run: jsdoc src/ -c jsdoc.json -R readme.md -d docs/
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
