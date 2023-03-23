@@ -1,0 +1,18 @@
+docs/
+node_modules
+package-lock.json
+yarn.lock
+.vscode
+
+# testing
+!/coverage
+/coverage/*
+!/coverage/lcov.info
+
+# production
+/build
+/dist
+/docs
+# misc
+.DS_Store
+*.iml

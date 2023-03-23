@@ -1,0 +1,38 @@
+{
+  "tags": {
+    "allowUnknownTags": ["category"]
+  },
+  "source": {
+    "include": ["src/"]
+  },
+  "opts": {
+    "encoding": "utf8",
+    "destination": "docs/",
+    "readme": "readme.md",
+    "recurse": true,
+    "verbose": true,
+    "template": "node_modules/better-docs"
+  },
+  "meta": {
+    "title": "GeneralJS",
+    "description": "Documentation for GeneralJS",
+    "keywords": "GeneralJS, JavaScript library, functionality, utilities, simplify, streamline, coding, complex applications, web pages, data manipulation, DOM manipulation, event handling, animation, pre-built components, sliders, accordions, modals, customization, AJAX requests, form validation, lightweight, easy to use, developers, skill levels, powerful, versatile, better applications, efficient websites"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "search": true,
+    "better-docs": {
+      "name": "GeneralJS Documentation",
+      "title": "GeneralJS",
+      "description": "This is the documentation for GeneralJS.",
+      "hideGenerator": false,
+      "navLinks": [
+        {
+          "label": "Github",
+          "href": "https://github.com/msrajawat298/GeneralJS"
+        }
+      ]
+    }
+  }
+}
