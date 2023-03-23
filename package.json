@@ -1,5 +1,5 @@
 {
-  "name": "GeneralJS",
+  "name": "general-js-toolkit",
   "version": "1.0.0",
   "description": "A versatile and easy-to-use JavaScript library for building complex applications and web pages.",
   "main": "index.js",
@@ -39,10 +39,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/msrajawat298/GeneralJS"
+    "url": "git+https://github.com/msrajawat298/general-js-toolkit"
   },
   "keywords": [
-    "GeneralJS",
+    "general-js-toolkit",
     "JavaScript library",
     "functionality",
     "utilities",
@@ -74,7 +74,7 @@
   "author": "msrajawat298",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/msrajawat298/GeneralJS/issues"
+    "url": "https://github.com/msrajawat298/general-js-toolkit/issues"
   },
-  "homepage": "https://github.com/msrajawat298/GeneralJS#readme"
+  "homepage": "https://github.com/msrajawat298/general-js-toolkit#readme"
 }

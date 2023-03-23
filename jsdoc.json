@@ -11,26 +11,31 @@
     "readme": "readme.md",
     "recurse": true,
     "verbose": true,
-    "template": "node_modules/better-docs"
+    "template": "node_modules/better-docs",
+    "include": ["readme.md"]
   },
   "meta": {
-    "title": "GeneralJS",
-    "description": "Documentation for GeneralJS",
-    "keywords": "GeneralJS, JavaScript library, functionality, utilities, simplify, streamline, coding, complex applications, web pages, data manipulation, DOM manipulation, event handling, animation, pre-built components, sliders, accordions, modals, customization, AJAX requests, form validation, lightweight, easy to use, developers, skill levels, powerful, versatile, better applications, efficient websites"
+    "title": "general-js-toolkit",
+    "description": "Documentation for general-js-toolkit",
+    "keywords": "general-js-toolkit, JavaScript library, functionality, utilities, simplify, streamline, coding, complex applications, web pages, data manipulation, DOM manipulation, event handling, animation, pre-built components, sliders, accordions, modals, customization, AJAX requests, form validation, lightweight, easy to use, developers, skill levels, powerful, versatile, better applications, efficient websites"
   },
   "templates": {
     "cleverLinks": false,
     "monospaceLinks": false,
     "search": true,
     "better-docs": {
-      "name": "GeneralJS Documentation",
-      "title": "GeneralJS",
-      "description": "This is the documentation for GeneralJS.",
+      "name": "general-js-toolkit",
+      "title": "general-js-toolkit",
+      "description": "This is the documentation for general-js-toolkit.",
       "hideGenerator": false,
       "navLinks": [
         {
           "label": "Github",
-          "href": "https://github.com/msrajawat298/GeneralJS"
+          "href": "https://github.com/vitabletec/general-js-toolkit"
+        },
+        {
+          "label": "Contact Us",
+          "href": "https://msrajawat298.business.site/"
         }
       ]
     }
