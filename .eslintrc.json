@@ -27,6 +27,6 @@
     "space-in-parens": ["error", "never"],
     "max-len": ["error", { "code": 155, "tabWidth": 2, "ignoreUrls": true }],
     // added linebreak-style rule
-    "linebreak-style": ["error", "windows"]
+    // "linebreak-style": ["error", "windows"]
   }
 }
