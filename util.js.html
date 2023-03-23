@@ -256,13 +256,7 @@ export function generateOTP(lengthOfOtp) {
  * @returns {string} "true" if the value is a number, "false" if the value is a string.
  */
 export function checkNumber(string) {
-  if (typeof string === 'number') {
-    return true;
-  }
-  if (typeof string === 'string') {
-    return true;
-  }
-  return false;
+  return typeof string === 'number' || typeof string === 'string';
 }
 
 /**
@@ -379,7 +373,7 @@ export function checkLeapYear(year) {
  */
 export function checkEmail(email) {
   if (checkIsEmpty(email)) return false;
-  const validation = /^([a-zA-z0-9_\-.]+)@([a-zA-Z0-9]+.)([a-z]+)(.[a-z]+)$/;
+  const validation = /^([a-zA-Z0-9_.-]+)@([a-zA-Z0-9]+\.)([a-z]+)(\.[a-z]+)$/;
   return !!email.match(validation);
 }
 
