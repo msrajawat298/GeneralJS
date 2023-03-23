@@ -1,4 +1,4 @@
-name: Build
+name: Check Sonarqube Scan
 on:
   push:
     branches:
