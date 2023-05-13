@@ -1,5 +1,5 @@
 /**
- * @function function checkIsEmpty
+ * @function checkIsEmpty
  * @desc Checks if a given value is empty or not.
  * @param {string} enter - The value to be checked for emptiness.
  * @returns {boolean} - Returns true if the value is empty, false otherwise.
@@ -126,11 +126,10 @@ export function printCounting(n) {
 }
 
 /**
-
-   * @desc Generates a random OTP (One Time Password) of a given length.
-   * @param {string} lengthOfOtp - The desired length of the OTP.
-   * @returns {number|string} The generated OTP if a valid length is provided. Otherwise, it returns an error message as a string.
-  */
+ * @desc Generates a random OTP (One Time Password) of a given length.
+ * @param {string} lengthOfOtp - The desired length of the OTP.
+ * @returns {number|string} The generated OTP if a valid length is provided. Otherwise, it returns an error message as a string.
+ */
 export function generateOTP(lengthOfOtp) {
   if (checkIsEmpty(lengthOfOtp)) return 'Please provide length of otp';
   const pad = '1';
