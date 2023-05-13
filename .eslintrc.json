@@ -3,7 +3,7 @@
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:jest/recommended",
-    "airbnb"
+    "airbnb-base"
   ],
   "plugins": ["prettier", "jest"],
   "parserOptions": {
@@ -14,6 +14,10 @@
     "sourceType": "module"
   },
   "rules": {
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "no-console": "warn",
+    "no-multi-spaces": "error",
+    "multiline-comment-style": ["error", "starred-block"],
     "prettier/prettier": [
       "error",
       {
@@ -25,8 +29,6 @@
     "no-trailing-spaces": "error",
     "comma-spacing": ["error", { "before": false, "after": true }],
     "space-in-parens": ["error", "never"],
-    "max-len": ["error", { "code": 155, "tabWidth": 2, "ignoreUrls": true }],
-    // added linebreak-style rule
-    // "linebreak-style": ["error", "windows"]
+    "max-len": ["error", { "code": 155, "tabWidth": 2, "ignoreUrls": true }]
   }
 }
