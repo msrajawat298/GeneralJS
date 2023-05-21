@@ -30,8 +30,20 @@
       "hideGenerator": false,
       "navLinks": [
         {
+          "label": "Join Us",
+          "href": "https://vitabletech.in/"
+        },
+        {
+          "label": "Blogs",
+          "href": "https://blog.vitabletech.in/"
+        },
+        {
+          "label": "Sonarcloud",
+          "href": "https://sonarcloud.io/project/overview?id=vitabletec_GeneralJS"
+        },
+        {
           "label": "Github",
-          "href": "https://github.com/vitabletec/general-js-toolkit"
+          "href": "https://github.com/vitabletech/general-js-toolkit"
         },
         {
           "label": "Contact Us",
