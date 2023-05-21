@@ -34,7 +34,7 @@ For more detailed information on how to use general-js-toolkit, please refer to 
 
 ## Documentation
 
-The documentation for general-js-toolkit can be found in the `docs` directory or on the [official website](https://vitabletec.github.io/general-js-toolkit/). The documentation includes detailed information on each function, including usage examples and code snippets.
+The documentation for general-js-toolkit can be found in the `docs` directory or on the [official website](https://vitabletech.github.io/general-js-toolkit/). The documentation includes detailed information on each function, including usage examples and code snippets.
 
 ## Contributing
 
