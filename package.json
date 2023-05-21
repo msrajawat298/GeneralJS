@@ -1,6 +1,6 @@
 {
   "name": "general-js-toolkit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A versatile and easy-to-use JavaScript library for building complex applications and web pages.",
   "main": "dist/general-js-toolkit.js",
   "prettier": "./.prettierrc",
