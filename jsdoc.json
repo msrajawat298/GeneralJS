@@ -30,8 +30,12 @@
       "hideGenerator": false,
       "navLinks": [
         {
+          "label": "Sonarcloud",
+          "href": "https://sonarcloud.io/project/overview?id=vitabletech_GeneralJS"
+        },
+        {
           "label": "Github",
-          "href": "https://github.com/vitabletec/general-js-toolkit"
+          "href": "https://github.com/vitabletech/general-js-toolkit"
         },
         {
           "label": "Contact Us",

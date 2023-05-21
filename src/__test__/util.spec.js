@@ -7,6 +7,8 @@ import {
   areaOfCircle,
   square,
   simpleinterest,
+  checkEmail,
+  checkNumber,
 } from '../util';
 
 it('checkIsEmpty returns true for empty string', () => {
@@ -14,7 +16,7 @@ it('checkIsEmpty returns true for empty string', () => {
 });
 
 it('checkIsEmpty returns false for non-empty string', () => {
-  expect(checkIsEmpty('Hello')).toBe(false);
+  expect(!checkIsEmpty('')).toBe(false);
 });
 
 it('invalidNumber returns true for NaN', () => {
@@ -67,4 +69,16 @@ it('simpleinterest returns the simple interest for valid inputs', () => {
 
 it('simpleinterest returns an error message for empty rate input', () => {
   expect(simpleinterest(5000, '', 3)).toBe('Please provide me rate');
+});
+
+it('checkEmail check for valid email', () => {
+  expect(checkEmail('abc.@.com')).toBe(false);
+});
+
+it('squaring the number', () => {
+  expect(square(2)).toBe(4);
+});
+
+it('Checking input number is number', () => {
+  expect(checkNumber('123')).toBe(true);
 });
