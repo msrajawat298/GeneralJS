@@ -62,7 +62,28 @@
                     
                         <a
                             class="link user-link "
-                            href="https://github.com/vitabletec/general-js-toolkit"
+                            href="https://vitabletech.in/"
+                        >
+                            Join Us
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://blog.vitabletech.in/"
+                        >
+                            Blogs
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://sonarcloud.io/project/overview?id=vitabletec_GeneralJS"
+                        >
+                            Sonarcloud
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/vitabletech/general-js-toolkit"
                         >
                             Github
                         </a>
@@ -92,7 +113,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#addDigit">addDigit</a></li><li><a href="global.html#areaOfCircle">areaOfCircle</a></li><li><a href="global.html#checkEmail">checkEmail</a></li><li><a href="global.html#checkLeapYear">checkLeapYear</a></li><li><a href="global.html#checkName">checkName</a></li><li><a href="global.html#checkNumber">checkNumber</a></li><li><a href="global.html#checkPveNve">checkPveNve</a></li><li><a href="global.html#checkUrl">checkUrl</a></li><li><a href="global.html#checkZipcode">checkZipcode</a></li><li><a href="global.html#exponents">exponents</a></li><li><a href="global.html#functionadd">function add</a></li><li><a href="global.html#functioncheckIsEmpty">function checkIsEmpty</a></li><li><a href="global.html#functioninvalidNumber">function invalidNumber</a></li><li><a href="global.html#generateOTP">generateOTP</a></li><li><a href="global.html#isDivisibleby7">isDivisibleby7</a></li><li><a href="global.html#maxNumber">maxNumber</a></li><li><a href="global.html#operation">operation</a></li><li><a href="global.html#phoneNumber">phoneNumber</a></li><li><a href="global.html#primeNumber">primeNumber</a></li><li><a href="global.html#printCounting">printCounting</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#simpleinterest">simpleinterest</a></li><li><a href="global.html#square">square</a></li><li><a href="global.html#squareOf">squareOf</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#addDigit">addDigit</a></li><li><a href="global.html#areaOfCircle">areaOfCircle</a></li><li><a href="global.html#checkEmail">checkEmail</a></li><li><a href="global.html#checkIsEmpty">checkIsEmpty</a></li><li><a href="global.html#checkLeapYear">checkLeapYear</a></li><li><a href="global.html#checkName">checkName</a></li><li><a href="global.html#checkNumber">checkNumber</a></li><li><a href="global.html#checkPveNve">checkPveNve</a></li><li><a href="global.html#checkUrl">checkUrl</a></li><li><a href="global.html#checkZipcode">checkZipcode</a></li><li><a href="global.html#exponents">exponents</a></li><li><a href="global.html#functionadd">function add</a></li><li><a href="global.html#functioninvalidNumber">function invalidNumber</a></li><li><a href="global.html#generateOTP">generateOTP</a></li><li><a href="global.html#isDivisibleby7">isDivisibleby7</a></li><li><a href="global.html#maxNumber">maxNumber</a></li><li><a href="global.html#operation">operation</a></li><li><a href="global.html#phoneNumber">phoneNumber</a></li><li><a href="global.html#primeNumber">primeNumber</a></li><li><a href="global.html#printCounting">printCounting</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#simpleinterest">simpleinterest</a></li><li><a href="global.html#square">square</a></li><li><a href="global.html#squareOf">squareOf</a></li></ul></div>
                 
             </nav>
         </div>
@@ -110,14 +131,12 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @function function checkIsEmpty
+ * @function checkIsEmpty
  * @desc Checks if a given value is empty or not.
  * @param {string} enter - The value to be checked for emptiness.
  * @returns {boolean} - Returns true if the value is empty, false otherwise.
  */
-export function checkIsEmpty(enter) {
-  return enter === '';
-}
+export const checkIsEmpty = (enter) => enter === '';
 
 /**
  * @function function invalidNumber
@@ -125,10 +144,10 @@ export function checkIsEmpty(enter) {
  * @param {number} number - The number to be checked.
  * @returns {boolean} - Returns true if the given number is invalid, false otherwise.
  */
-export function invalidNumber(number) {
+export const invalidNumber = (number) => {
   if (checkIsEmpty(number)) return false;
   return Number.isNaN(number);
-}
+};
 
 /**
  * @function function add
@@ -137,9 +156,7 @@ export function invalidNumber(number) {
  * @param {number|string} n2 - The second number to be added.
  * @returns {number} - The sum of the two numbers.
  */
-export function add(n1, n2) {
-  return parseInt(n1, 10) + parseInt(n2, 10);
-}
+export const add = (n1, n2) => parseInt(n1, 10) + parseInt(n2, 10);
 
 /**
  * @desc Performs a mathematical operation on two numbers using the specified operator.
@@ -148,7 +165,7 @@ export function add(n1, n2) {
  * @param {string} operator - The operator to be used for the mathematical operation.
  * @returns {number|string} - The result of the mathematical operation, or an error message if there was an issue with the input.
  */
-export function operation(n1, n2, operator) {
+export const operation = (n1, n2, operator) => {
   if (n1 === '' || n2 === '') return false;
   const num1 = parseInt(n1, 10);
   const num2 = parseInt(n2, 10);
@@ -162,7 +179,7 @@ export function operation(n1, n2, operator) {
     return num1 * num2;
   }
   return false;
-}
+};
 
 /**
  * @desc Finds either the maximum or minimum number from an array of numbers.
@@ -170,7 +187,7 @@ export function operation(n1, n2, operator) {
  * @param {string} [type="max"] - The type of operation to perform: "max" to find the maximum number or "min" to find the minimum number.
  * @returns {string} - This  export function  max or min number depend on type default it will return max.
  */
-export function maxNumber(numbers, type) {
+export const maxNumber = (numbers, type) => {
   let callerType = 'max';
   if (type === 'min') {
     callerType = 'min';
@@ -185,26 +202,24 @@ export function maxNumber(numbers, type) {
     }
   }
   return num;
-}
+};
 
 /**
  * @desc Calculates the square of a given number.
  * @param {number} n - The number to be squared.
  * @returns {number} The calculated square of the number.
  */
-export function square(n) {
-  return n * n;
-}
+export const square = (n) => n * n;
 
 /**
  * @desc Calculates the area of a circle based on its radius.
  * @param {number} radius - The radius of the circle.
  * @returns {number} The calculated area of the circle.
  */
-export function areaOfCircle(radius) {
+export const areaOfCircle = (radius) => {
   const area = 3.14 * square(radius);
   return area;
-}
+};
 
 /**
  * @desc Calculates the simple interest based on the principle, rate, and time.
@@ -213,12 +228,12 @@ export function areaOfCircle(radius) {
  * @param {number} time - The time period of the loan.
  * @returns {number|string} The calculated simple interest of the loan if the rate is provided, otherwise it returns an error message as a string.
  */
-export function simpleinterest(principle, rate, time) {
+export const simpleinterest = (principle, rate, time) => {
   if (rate === '') return 'Please provide me rate';
   const si = principle * rate * time;
   const into = si / 100;
   return into;
-}
+};
 
 /**
  * @desc Prints counting from 1 to a given number n.
@@ -226,7 +241,7 @@ export function simpleinterest(principle, rate, time) {
  * @returns {string} The text representation of the counting from 1 to the given number, separated by "&lt;br/>" tags,
  * if a valid number is provided. Otherwise, it returns an error message as a string.
  */
-export function printCounting(n) {
+export const printCounting = (n) => {
   if (n === '') return 'Please provide valid number';
   if (typeof n === 'string') return 'Please give me valid number';
   let text = '';
@@ -234,30 +249,27 @@ export function printCounting(n) {
     text += `${i}&lt;br/>`;
   }
   return text;
-}
+};
 
 /**
-
-   * @desc Generates a random OTP (One Time Password) of a given length.
-   * @param {string} lengthOfOtp - The desired length of the OTP.
-   * @returns {number|string} The generated OTP if a valid length is provided. Otherwise, it returns an error message as a string.
-  */
-export function generateOTP(lengthOfOtp) {
+ * @desc Generates a random OTP (One Time Password) of a given length.
+ * @param {string} lengthOfOtp - The desired length of the OTP.
+ * @returns {number|string} The generated OTP if a valid length is provided. Otherwise, it returns an error message as a string.
+ */
+export const generateOTP = (lengthOfOtp) => {
   if (checkIsEmpty(lengthOfOtp)) return 'Please provide length of otp';
   const pad = '1';
   const afterPad = pad.padEnd(parseInt(lengthOfOtp, 10) + 1, '0');
   const hhis = Math.floor(Math.random() * afterPad);
   return hhis;
-}
+};
 
 /**
  * @desc Checks whether a given value is a number or not.
  * @param {number|string} string - The value to be checked.
  * @returns {string} "true" if the value is a number, "false" if the value is a string.
  */
-export function checkNumber(string) {
-  return typeof string === 'number' || typeof string === 'string';
-}
+export const checkNumber = (string) => typeof string === 'number' || typeof string === 'string';
 
 /**
  * @desc Checks if a given number is positive, negative or zero.
@@ -265,7 +277,7 @@ export function checkNumber(string) {
  * @returns {string} A message indicating whether the given number is positive, negative or zero.
  * If the input is empty or invalid, an error message is returned instead.
  */
-export function checkPveNve(numbr) {
+export const checkPveNve = (numbr) => {
   if (checkIsEmpty(numbr)) return 'Empty';
   if (invalidNumber(numbr)) return 'please enter a valid number';
 
@@ -279,24 +291,24 @@ export function checkPveNve(numbr) {
     return 'zero';
   }
   return false;
-}
+};
 
 /**
  * @desc Checks if a given number is divisible by 7.
  * @param {number|string} diiv - The number to be checked for divisibility by 7.
  * @returns {string} The result of the divisibility check as a string, either "this number is divisible by 7" or "this number is not divisible by 7".
  */
-export function isDivisibleby7(number) {
+export const isDivisibleby7 = (number) => {
   if (checkIsEmpty(number) || invalidNumber(number)) return false;
   return number % 7 === 0;
-}
+};
 
 /**
  * @desc Sums up the digits of a given number.
  * @param {number} digit - The number whose digits need to be summed up.
  * @returns {number} The calculated sum of the digits of the given number.
  */
-export function addDigit(digit) {
+export const addDigit = (digit) => {
   let sum = 0;
   let finalDigit = digit;
   while (finalDigit !== 0) {
@@ -304,14 +316,14 @@ export function addDigit(digit) {
     finalDigit = Math.floor(finalDigit / 10);
   }
   return sum;
-}
+};
 
 /**
  * @desc Calculates the sum of squares of the digits of a given number.
  * @param {number} digit - The number whose digits' squares need to be summed.
  * @returns {number} The calculated sum of squares of the digits of the given number.
  */
-export function squareOf(digit) {
+export const squareOf = (digit) => {
   let sum = 0;
   let finalDigit = digit;
   while (finalDigit !== 0) {
@@ -319,16 +331,14 @@ export function squareOf(digit) {
     finalDigit = Math.floor(finalDigit / 10);
   }
   return sum;
-}
+};
 
 /**
  * @description Reverses a given string.
  * @param {string} entVal - The string to be reversed.
  * @returns {string} The reversed version of the given string.
  */
-export function reverse(entVal) {
-  return entVal.split('').reverse().join('');
-}
+export const reverse = (entVal) => entVal.split('').reverse().join('');
 
 /**
  * @desc Calculates the exponent of a given number.
@@ -336,89 +346,87 @@ export function reverse(entVal) {
  * @param {number} exponentNumber - The exponent number.
  * @returns {number} The calculated exponent of the base number.
  */
-export function exponents(baseNumber, exponentNumber) {
+export const exponents = (baseNumber, exponentNumber) => {
   let exp = 1;
   for (let i = 1; i &lt;= exponentNumber; i += 1) {
     exp = baseNumber * exponentNumber;
   }
   return exp;
-}
+};
 
 /**
  * @desc Determines if a given number is a prime number or not.
  * @param {number} pNumber - The number to be checked.
  * @returns {boolean} True if the number is a prime number, false otherwise.
  */
-export function primeNumber(pNumber) {
+export const primeNumber = (pNumber) => {
   if (pNumber === 0 || pNumber === 1) return false;
   for (let i = 2; i &lt; pNumber; i += 1) {
     if (pNumber % i === 0) return false;
   }
   return true;
-}
+};
 
 /**
  * @desc Checks if a given year is a leap year or not.
  * @param {number} year - The year to be checked.
  * @returns {boolean} True if the year is a leap year, False otherwise.
  */
-export function checkLeapYear(year) {
-  return year % 4 === 0 &amp;&amp; year % 100 !== 0;
-}
+export const checkLeapYear = (year) => year % 4 === 0 &amp;&amp; year % 100 !== 0;
 
 /**
  * @desc Checks whether an email is valid or not based on a regular expression.
  * @param {string} email - The email address to be validated.
  * @returns {boolean} Returns true if the email is valid and false
  */
-export function checkEmail(email) {
+export const checkEmail = (email) => {
   if (checkIsEmpty(email)) return false;
   const validation = /^([a-zA-Z0-9_.-]+)@([a-zA-Z0-9]+\.)([a-z]+)(\.[a-z]+)$/;
   return !!email.match(validation);
-}
+};
 
 /**
  * @desc Checks if a given URL is valid or not.
  * @param {string} enterurl - The URL to be validated.
  * @returns {boolean} true is valid else false
  */
-export function checkUrl(enterurl) {
+export const checkUrl = (enterurl) => {
   if (checkIsEmpty(enterurl)) return false;
   const validurl = /^(https:\/\/)[a-zA-Z0-9$-]+(.?[a-z])$/;
   return !!enterurl.match(validurl);
-}
+};
 /**
  * @desc Checks if a given zip code is valid or not.
  * @param {string} zip - The zip code to be validated.
  * @returns {string} A message indicating if the zip code is valid or not.
  */
-export function checkZipcode(zip) {
+export const checkZipcode = (zip) => {
   if (invalidNumber(zip)) return false;
   const zipcode = /^([0-9]{6})$/;
   return !!zip.match(zipcode);
-}
+};
 
 /**
  * @desc Checks if a given phone number is valid or not.
  * @param {string} numBer - The phone number to be validated.
  * @returns {boolean} True if the phone number is valid, False otherwise.
  */
-export function phoneNumber(numBer) {
+export const phoneNumber = (numBer) => {
   if (checkIsEmpty(numBer)) return false;
   const test = /^(\+91[0-9]{10})$/;
   return !!numBer.match(test);
-}
+};
 
 /**
  * @desc Checks if a given name is valid or not.
  * @param {string} name - The name to be validated.
  * @returns {boolean} True if the name is valid, False otherwise.
  */
-export function checkName(name) {
+export const checkName = (name) => {
   if (checkIsEmpty(name)) return false;
   const infoName = /^[a-zA-Z]+$/;
   return !!name.match(infoName);
-}
+};
 </code></pre>
         </article>
     </section>
