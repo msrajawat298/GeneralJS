@@ -14,7 +14,12 @@ export const checkIsEmpty = (enter) => enter === '';
  */
 export const invalidNumber = (number) => {
   if (checkIsEmpty(number)) return false;
+  console.log(number);
   return Number.isNaN(number);
+};
+
+export greeting = (name) => {
+  if(name) alert(name);
 };
 
 /**
@@ -40,7 +45,7 @@ export const operation = (n1, n2, operator) => {
   if (operator === '+') {
     return num1 + num2;
   }
-  if (operator === '-') {
+  if (operator == '-') {
     return num1 - num2;
   }
   if (operator === '*') {
